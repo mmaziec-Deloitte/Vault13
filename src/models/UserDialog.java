@@ -70,21 +70,28 @@ public class UserDialog {
                             "--- LAB --> the Vault's laboratory\n");
                     String department = scanner.next().toUpperCase();*/
                     System.out.println("-- Please, type in your SPECIAL values in the chronological order, \n" +
-                            "(!) Values in range from 1 up to 10 separated by the spacebar:\n");
+                            "(!) Values in range from 1 up to 10 separated by ENTER:\n");
                     //String specialValues = scanner.nextLine();
-                    String[] specials =scanner.nextLine().split("\\s"); // split by spaces
+                    Integer[] specials = new Integer[7];
+                    for (int i = 0; i < 7; i++){
+                        specials[i] = scanner.nextInt();
+                    }
                     System.out.println("-- Please, type in your Secondary Skills values in the chronological order, \n" +
-                            "(!) Values in range from 1 up to 100 separated by the spacebar:\n" +
+                            "(!) Values in range from 1 up to 100 separated by ENTER:\n" +
                             "[FIRST AID, SNEAK, LOCKPICK, STEAL, SCIENCE, REPAIR, SPEECH, BARTER, GAMBLING]");
-                    String[] skills = scanner.nextLine().split("\\s"); // split by spaces
+
+                    Integer[] skills = new Integer[9];
+                    for (int i = 0; i < 9; i++){
+                        skills[i] = scanner.nextInt();
+                    }
 
                     Dweller newDweller = new Dweller(id, name, surname, age, Dweller.Gender.valueOf(gender),
-                            new SPECIAL(new ArrayList<>(), Integer.valueOf(specials[0]), Integer.valueOf(specials[1]),
-                                    Integer.valueOf(specials[2]), Integer.valueOf(specials[3]),
-                                    Integer.valueOf(specials[4]), Integer.valueOf(specials[5]), Integer.valueOf(specials[6])),
-                            new Skills(new ArrayList<>(), Integer.valueOf(skills[0]), Integer.valueOf(skills[1]), Integer.valueOf(skills[2]),
-                                    Integer.valueOf(skills[3]), Integer.valueOf(skills[4]), Integer.valueOf(skills[5]),
-                                    Integer.valueOf(skills[6]), Integer.valueOf(skills[7]), Integer.valueOf(skills[8])));
+                            new SPECIAL(new ArrayList<>(), (specials[0]), (specials[1]),
+                                    (specials[2]), (specials[3]),
+                                    (specials[4]), (specials[5]), (specials[6])),
+                            new Skills(new ArrayList<>(), (skills[0]), (skills[1]), (skills[2]),
+                                    (skills[3]), (skills[4]), (skills[5]),
+                                    (skills[6]), (skills[7]), (skills[8])));
 
                     dwellerList.add(newDweller);
                     UserDialog.whatToDo();
