@@ -16,7 +16,6 @@ public class Main {
         Department lab = new Department(Department.DepartmentName.LAB);
         Collections.addAll(departmentsList, cafeteria, armoury, commandCenter, office, entrance, lab);
 
-
         List<Dweller> dwellersList = new ArrayList<>();
 
         Dweller dweller1 = new Dweller(3,"Michał", "Maziec", 22, Dweller.Gender.MALE,
@@ -49,13 +48,8 @@ public class Main {
 
         Collections.addAll(dwellersList, dweller1, dweller2, dweller3, overseer);
 
-
-
         UserDialog.greeting();
         UserDialog.whatToDo();
         UserDialog.dialog(dwellersList);
-
-
-
     }
 }

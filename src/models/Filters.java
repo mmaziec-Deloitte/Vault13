@@ -1,14 +1,8 @@
 package models;
-
-import jdk.swing.interop.SwingInterOpUtils;
-
-import java.sql.SQLOutput;
 import java.util.List;
 
 public class Filters {
-
     public static void showDweller(Dweller dweller) {
-
         System.out.println("--------------------------------------------------------------------\n" +
                 "                       DWELLER <" + dweller.getId() + ">\n\n" +
                 "-- Name: |   " + dweller.getName() + "   |\n" +

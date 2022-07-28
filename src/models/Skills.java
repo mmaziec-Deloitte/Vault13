@@ -12,13 +12,13 @@ public class Skills {
 
         this.skillsList.add(0, new Skill(Skill.SkillName.First_Aid, firstAidValue));
         this.skillsList.add(1, new Skill(Skill.SkillName.Sneak, sneakValue));
-        this.skillsList.add(1, new Skill(Skill.SkillName.Lockpick, lockpickValue));
-        this.skillsList.add(1, new Skill(Skill.SkillName.Steal, stealValue));
-        this.skillsList.add(1, new Skill(Skill.SkillName.Science, scienceValue));
-        this.skillsList.add(1, new Skill(Skill.SkillName.Repair, repairValue));
-        this.skillsList.add(1, new Skill(Skill.SkillName.Speech, speechValue));
-        this.skillsList.add(1, new Skill(Skill.SkillName.Barter, barterValue));
-        this.skillsList.add(1, new Skill(Skill.SkillName.Gambling, gamblingValue));
+        this.skillsList.add(2, new Skill(Skill.SkillName.Lockpick, lockpickValue));
+        this.skillsList.add(3, new Skill(Skill.SkillName.Steal, stealValue));
+        this.skillsList.add(4, new Skill(Skill.SkillName.Science, scienceValue));
+        this.skillsList.add(5, new Skill(Skill.SkillName.Repair, repairValue));
+        this.skillsList.add(6, new Skill(Skill.SkillName.Speech, speechValue));
+        this.skillsList.add(7, new Skill(Skill.SkillName.Barter, barterValue));
+        this.skillsList.add(8, new Skill(Skill.SkillName.Gambling, gamblingValue));
     }
 
     public static void printSkills(Skills skillsList){
@@ -37,7 +37,6 @@ public class Skills {
     public static class Skill {
         private SkillName skillName;
         private int value;
-
 
         enum SkillName {
             First_Aid,
@@ -72,5 +71,4 @@ public class Skills {
             this.value = value;
         }
     }
-
 }

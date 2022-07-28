@@ -16,6 +16,5 @@ public class Department {
 
     public Department(DepartmentName departmentName) {
         this.departmentName = departmentName;
-        //this.dwellersNumber = dwellersNumber;
     }
 }

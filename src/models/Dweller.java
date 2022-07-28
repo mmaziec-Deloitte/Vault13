@@ -6,7 +6,6 @@ public class Dweller {
     private String name;
     private String surname;
     private int age;
-
     private Gender gender;
     private SPECIAL special;
     private Skills skillList;
@@ -36,17 +35,13 @@ public class Dweller {
     enum Gender {
         MALE("MALE"),
         FEMALE("FEMALE");
-
         private String gender;
-
         Gender(String gender){
             this.gender=gender;
         }
-
         public String getGender() {
             return gender;
         }
-
         public void setGender(String gender) {
             this.gender = gender;
         }

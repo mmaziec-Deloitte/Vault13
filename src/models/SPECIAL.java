@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SPECIAL {
-
     private List<Attribute> special = new ArrayList<>(7);
     //Attribute attribute = new Attribute();
 
@@ -30,7 +29,6 @@ public class SPECIAL {
                            "--- > AGILITY: " + special.special.get(5).getValue() + "\n" +
                            "--- > LUCK: " + special.special.get(6).getValue() + "\n");
     }
-
 
     public static class Attribute {
 
